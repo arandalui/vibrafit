@@ -349,9 +349,9 @@ select option{background:#1a1a1a;color:var(--text)}
 <!-- ════ ACCESO ════ -->
 <div id="s-access" class="screen active">
   <div style="background:radial-gradient(ellipse 90% 60% at 50% -5%,#2a2000 0%,var(--black) 60%);flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2.5rem 1.5rem">
-    <img class="access-logo" src="" alt="Vibra Fit">
-    <div class="access-title">VIBRA FIT</div>
-    <div class="access-sub">Prof. Luis Aranda · @vibrafitlatam</div>
+    <div style="font-family:Bebas Neue,sans-serif;font-size:5rem;letter-spacing:8px;color:#d4a017;line-height:.9;margin-bottom:.5rem">VIBRA</div>
+    <div style="font-family:Bebas Neue,sans-serif;font-size:5rem;letter-spacing:8px;color:#d4a017;line-height:.9;margin-bottom:1rem">FIT</div>
+    <div style="font-size:.75rem;color:#666;letter-spacing:3px;text-transform:uppercase;margin-bottom:2rem">Prof. Luis Aranda · @vibrafitlatam</div>
     <div class="access-box">
       <h2>🔐 ACCESO AL RETO</h2>
       <p>Ingresá tu clave personal para acceder al plan. Cada clave es única e intransferible.</p>
@@ -1621,7 +1621,7 @@ function generarPlan(){
   buildProgreso();buildResumen();buildNutricion();buildTraining();buildShop();buildRanking();
 
   // Notificar por WhatsApp al coach
-  notifyCoach(nombre, peso, talla, edad, sexo, obj, condiciones, restricciones, condExtra);
+  // notifyCoach desactivado — sin redirección a WhatsApp al registrarse
 
   go('s-welcome');
 }
